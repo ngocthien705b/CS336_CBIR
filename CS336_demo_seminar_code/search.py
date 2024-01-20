@@ -28,7 +28,7 @@ features = cd.describe(query)
 
 # perform the search
 searcher = Searcher("index.csv")
-results = searcher.search(features)
+results = searcher.search(features, 5)
 
 # display the query
 height = 600
