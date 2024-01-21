@@ -76,5 +76,12 @@ n = 20
 print("True positive: ", true_positive)
 print("False positive: ", false_positive)
 print("False negative: ", n - true_positive)
-print("Precision: ", true_positive / (true_positive + false_positive))
-print("Recall: ", true_positive / n)
+
+precision = true_positive / (true_positive + false_positive)
+print("Precision: ", precision)
+
+recall = true_positive / n
+print("Recall: ", recall)
+
+f1 = 2 * (precision * recall) / (precision + recall)
+print("F1 score: ", f1)
