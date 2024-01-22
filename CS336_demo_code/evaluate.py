@@ -5,7 +5,7 @@ import os
 import csv
 
 # initialize the image descriptor
-cd = ColorDescriptor((8, 12, 3))
+cd = ColorDescriptor((8, 10, 8))
 searcher = Searcher("index.csv")
 
 def test(query_img):

@@ -2,10 +2,10 @@ Topic,Input image,True positive,False positive,False negative,Precision,Recall,F
 beach,query_imgs/beach2.jpg,10,10,10,0.5,0.5,0.5
 city,query_imgs/city1.jpg,8,12,12,0.4,0.4,0.4000000000000001
 countryside,query_imgs/countryside1.jpg,5,15,15,0.25,0.25,0.25
-forest,query_imgs/forest1.jpg,1,19,19,0.05,0.05,0.05000000000000001
+forest,query_imgs/forest2.jpg,5,15,15,0.25,0.25,0.25
 mountain,query_imgs/mountain1.jpg,6,14,14,0.3,0.3,0.3
 plateau,query_imgs/plateau1.jpg,8,12,12,0.4,0.4,0.4000000000000001
 river,query_imgs/river1.jpg,3,17,17,0.15,0.15,0.15
-savanna,query_imgs/savanna1.jpg,10,10,10,0.5,0.5,0.5
-swamp,query_imgs/swamp1.jpg,8,12,12,0.4,0.4,0.4000000000000001
+savanna,query_imgs/savanna1.jpg,12,8,8,0.6,0.6,0.6
+swamp,query_imgs/swamp1.jpg,7,13,13,0.35,0.35,0.35
 twilight_view,query_imgs/twilight_view1.jpg,1,19,19,0.05,0.05,0.05000000000000001

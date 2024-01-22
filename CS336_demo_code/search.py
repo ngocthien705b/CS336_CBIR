@@ -25,7 +25,7 @@ ap.add_argument("-n", "--num_results", required = False,
 args = vars(ap.parse_args())
 
 # initialize the image descriptor
-cd = ColorDescriptor((8, 12, 3))
+cd = ColorDescriptor((8, 10, 8))
 
 # load the query image and describe it
 query = cv2.imread(args["query"])
@@ -50,13 +50,24 @@ query_file_name = os.path.basename(args["query"])
 query_file_name = os.path.splitext(query_file_name)[0]
 query_file_name = query_file_name.rstrip('0123456789')
 
+# Reset result
+for item in os.listdir('results'):
+    item_path = os.path.join('results', item)
+    if os.path.isfile(item_path):
+        os.remove(item_path)
+
+i = 0
 true_positive = 0
 false_positive = 0
 # loop over the results
 for (score, resultID) in results:
+	i += 1
+
 	# load the result image and display it
+
 	# result = cv2.imread(args["result_path"] + "/" + resultID)
 	result = cv2.imread(resultID)
+	cv2.imwrite(f'results/result{i}.jpg', result)
 	height = 600
 	width = int((height / result.shape[0]) * result.shape[1])
 	result = cv2.resize(result, (width, height))
